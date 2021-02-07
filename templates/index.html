@@ -1,0 +1,41 @@
+{% extends 'base.html' %} {% block head %}
+<title>Notes Master</title>
+
+{% endblock %}
+
+<!-- body -->{% block body %}
+<div class="content">
+    <h1>Notes Master</h1>
+    {% if notes | length < 1 %}
+    <h4>There are not notes, create one below!</h4>
+    {% else %}
+    <table id="notes">
+        <tr>
+            <th>Note</th>
+            <th>Date Added</th>
+            <th>Actions</th>
+        </tr>
+
+        {% for note in notes %}
+
+        <tr>
+            <td>{{ note.content }}</td>
+            <td>{{ note.date_created.date() }}</td>
+            <td>
+                <a href="/delete/{{note.id}}">Delete</a>
+                <br>
+                <a href="/update/{{note.id}}">Update</a>
+            </td>
+        </tr>
+        {% endfor %}
+    </table>
+    {% endif %}
+    <div class="form">
+        <form action='/' method="POST">
+            <input type="text" name="content" id="content">
+            <input type="submit" id="add_note" value="Add Note">
+        </form>
+    </div>
+</div> 
+
+{% endblock %}

@@ -1,0 +1,75 @@
+body {
+    background-color: #fff8dc;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.content {
+    margin: 0 auto;
+    width: 400px;
+}
+
+.content h1, h4 {
+    text-align: center;
+}
+
+.content a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.content a:hover {
+    color: red;
+}
+
+
+#notes td,
+#notes th {
+    border: 1px solid #aaa;
+}
+
+#notes {
+    background-color: #fffcef;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#notes th {
+    height: 30px;
+    background-color: rgb(248, 234, 178);
+}
+
+#notes td {
+    text-align: center;
+    padding: 5px;
+}
+
+.form {
+    margin-top: 20px;
+    width: auto;
+}
+
+#add_note {
+    background-color: #f7ffbd;
+    font-weight: bold;
+}
+
+#add_note:hover {
+    background-color: #c4ca96;
+    font-weight: bold;
+}
+
+#update_note {
+    background-color: #5aff55;
+    font-weight: bold;
+}
+
+#update_note:hover {
+    background-color: #3fb83a;
+    font-weight: bold;
+}
+
+#content {
+    width: 70%;
+}
