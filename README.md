@@ -6,3 +6,4 @@ Next update I'll add login and sign up things, so then you can add only your not
 
 Or maybe you can chat secretly with someone, who knows!
 
+Check it out! https://flasknotesmaster.herokuapp.com/
