@@ -1,4 +1,4 @@
-# notes-master
+# Notes Master
 
 Basically works more like a message app than a note app lmao
 
